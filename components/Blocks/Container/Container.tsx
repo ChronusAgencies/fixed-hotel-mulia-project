@@ -1,5 +1,4 @@
 import { TGeneral } from '@/utils/Types/Types';
-import { type } from 'os';
 import React from 'react';
 
 type TContainerProps = TGeneral & {
@@ -8,7 +7,9 @@ type TContainerProps = TGeneral & {
 
 const Container = ({className, children, clickEvent} : TContainerProps ) => {
   return (
-    <div className={className} onClick={clickEvent}>{children}</div>
+    <div className={className} onClick={clickEvent}>
+      {children}
+    </div>
   )
 }
 

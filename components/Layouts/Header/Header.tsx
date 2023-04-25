@@ -15,6 +15,7 @@ const Header = () => {
   return (
     <>
       <Navbar activeClass={`${isActive && 'isActive'}`} clickEvent={handleToggleActivate}/>
+      <NavLinks className={`${isActive && 'isActive'}`}/>
     </>
   )
 }
